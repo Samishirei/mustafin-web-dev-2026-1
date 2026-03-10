@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('fonts/minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Grass_Block.jpg');
+    background-repeat: repeat;
+    background-size: 356px 256px;
+    background-color: #1a2c1a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 200px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.up_name {
+    margin-bottom: 3px;
+}
+
+.up_name h1 {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 4px 4px 0 #2a4a2a, 6px 6px 0 #0a2a0a;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.buttons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.buttons li {
+    position: relative;
+    text-align: center;
+}
+
+.buttons li a {
+    text-decoration: none;
+    color: #aaffaa;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    border-radius: 0px;
+    min-width: 150px;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #3a3a3a;
+    border-color: #8b8b8b #2a2a2a #2a2a2a #8b8b8b;
+    box-shadow: 0 4px 0 #2a2a2a;
+}
+
+.buttons li a:hover {
+    color: #ffffff;
+    background-color: #5a5a5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #2a4a2a;
+    border-color: #aaaaaa #3a3a3a #3a3a3a #aaaaaa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+}
+
+p, label, td, th {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+}
+
+a {
+    color: #aaffaa;
+}
+
+.page-title {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.page-title h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.orders-block {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgba(30, 30, 30, 0.5);
+    color: #aaffaa;
+    padding: 15px;
+    border: 2px solid #5a5a5a;
+    text-align: center;
+    font-size: 25px;
+}
+
+td {
+    padding: 12px;
+    border: 2px solid #5a5a5a;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+td i {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #aaffaa;
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+td i:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: rgba(20, 20, 20, 0.95);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    margin: 100px auto;
+    padding: 40px;
+    width: 600px;
+    max-width: 90%;
+    position: relative;
+}
+
+.close {
+    color: #aaffaa;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: #ffffff;
+}
+
+.modal-content h2 {
+    color: #aaffaa;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #8b8b8b;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+button {
+    padding: 15px 25px;
+    border: 3px solid #8b8b8b;
+    background-color: #b91313;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 4px 0 #5a2a2a;
+    min-width: 120px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2762c0;
+    box-shadow: 0 4px 0 #1a3a6a;
+}
+
+#orderDetails p {
+    margin: 15px 0;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+#orderDetails strong {
+    color: #aaffaa;
+}
+
+#contacts {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts p {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+    margin: 0;
+    font-size: 25px;
+    line-height: 1;
+}
+
+main {
+    flex: 1;
+}

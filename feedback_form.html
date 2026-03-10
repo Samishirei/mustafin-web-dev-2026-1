@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Taste the best food from Minecraft world!">
+  <meta name="author" content="rei">
+  <title>Cubic World of Taste - Feedback form</title>
+
+  <link rel="icon" href="images/Golden_Apple.png" type="image/png">
+  <link rel="stylesheet" href="feedback_form.css">
+
+  <meta property="og:title" content="Cubic World of Taste">
+  <meta property="og:description" content="Delicious Minecraft-themed food">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Golden_Apple.png">
+  <meta property="og:url" content="https://адрес сайта">
+
+  <link rel="alternate" hreflang="en" href="https://адрес сайта/en/">
+</head>
+
+<body>
+  
+  <div class="up_name">
+    <h1>Cubic World of Taste</h1>
+  </div>
+ 
+  <header>
+    <nav>
+      <ul class="buttons">
+        <li><a href="about_us.html"><h3>About us</h3></a></li>
+        <li><a href="#contacts"><h3>Contact</h3></a></li>
+        <li><a href="create_lunch.html"><h3>Create lunch</h3></a></li>
+        <li><a href="place_an_order.html"><h3>Place an order</h3></a></li>
+        <li><a href="order.html"><h3>Orders</h3></a></li>
+        <li><a href="feedback_form.html"><h3>Feedback form</h3></a></li>
+        <li><a href="authentication.html"><h3>Authentication</h3></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="feedback-block">
+    <h1>Feedback form</h1>
+    <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+      
+      <div class="form-group">
+        <label for="fullname">Surname/First names:</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="Input field">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Input field">
+      </div>
+
+      <h2>How did you hear about us?:</h2>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="source" value="local" required>
+          <h3>From the local residents of the kingdom.</h3>
+        </label>
+        <label>
+          <input type="radio" name="source" value="travelers">
+          <h3>From foreign travelers.</h3>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="type"><h3>Reason for contacting:</h3></label>
+        <select id="type" name="type" required>
+          <option value=""><h3>Select type</h3></option>
+          <option value="problem"><h3>Report a problem with the quality of our services.</h3></option>
+          <option value="suggestion"><h3>Make a suggestion to improve our service.</h3></option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message"><h3>Message:</h3></label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="attachment"><h3>Attachments:</h3></label>
+        <input type="file" id="attachment" name="attachment">
+      </div>
+
+      <div class="checkbox-group">
+        <label class="checkbox-label">
+          <input type="checkbox" name="consent" required>
+          <h3>I agree for my personal data to be collected and used.</h3>
+        </label>
+      </div>
+
+      <button type="submit"><h3>Submit</h3></button>
+    </form>
+  </div>
+
+  <footer id="contacts">
+    <p>&copy; 2026 Cubic World of Taste productions</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('fonts/minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Grass_Block.jpg');
+    background-repeat: repeat;
+    background-size: 356px 256px;
+    background-color: #1a2c1a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 200px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.up_name {
+    margin-bottom: 3px;
+}
+
+.up_name h1 {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 4px 4px 0 #2a4a2a, 6px 6px 0 #0a2a0a;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.buttons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.buttons li {
+    position: relative;
+    text-align: center;
+}
+
+.buttons li a {
+    text-decoration: none;
+    color: #aaffaa;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    border-radius: 0px;
+    min-width: 150px;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #3a3a3a;
+    border-color: #8b8b8b #2a2a2a #2a2a2a #8b8b8b;
+    box-shadow: 0 4px 0 #2a2a2a;
+}
+
+.buttons li a:hover {
+    color: #ffffff;
+    background-color: #5a5a5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #2a4a2a;
+    border-color: #aaaaaa #3a3a3a #3a3a3a #aaaaaa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+}
+
+p, label {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+}
+
+a {
+    color: #aaffaa;
+}
+
+.page-title-block {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.page-title-block h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.order-block {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.checkout-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.checkout-cart, .checkout-form {
+    flex: 1 1 400px;
+}
+
+.checkout-cart h2, .checkout-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.order-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.item-card {
+    background-color: rgba(30, 30, 30, 0.5);
+    border: 2px solid #5a5a5a;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.item-card img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #5a5a5a;
+}
+
+.item-card h4 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+.item-card .price {
+    color: #aaffaa;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.item-card button {
+    background-color: #b91313;
+    color: #ffffff;
+    border: 3px solid #8b8b8b;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    width: 100%;
+    font-size: 18px;
+    box-shadow: 0 4px 0 #5a2a2a;
+}
+
+.item-card button:hover {
+    background-color: #2762c0;
+    box-shadow: 0 4px 0 #1a3a6a;
+}
+
+.checkout-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.checkout-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #5a5a5a;
+    font-size: 20px;
+}
+
+.checkout-list li span {
+    color: #aaffaa;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #8b8b8b;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkbox-group, .radio-group {
+    margin-bottom: 20px;
+}
+
+.checkbox-label, .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.checkbox-label h3, .radio-group label h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.time-selection {
+    margin-bottom: 20px;
+}
+
+.time-selection label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.time-selection input {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid #8b8b8b;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 15px 25px;
+    font-size: 22px;
+    border: 3px solid #8b8b8b;
+    cursor: pointer;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    text-transform: uppercase;
+    flex: 1;
+    box-shadow: 0 4px 0 #5a2a2a;
+}
+
+.primary-btn {
+    background-color: #b91313;
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background-color: #2762c0;
+    box-shadow: 0 4px 0 #1a3a6a;
+}
+
+.secondary-btn {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    box-shadow: 0 4px 0 #2a2a2a;
+}
+
+.secondary-btn:hover {
+    background-color: #5a5a5a;
+    box-shadow: 0 4px 0 #3a3a3a;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: rgba(20, 20, 20, 0.95);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    padding: 30px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.popup-content h3 {
+    color: #aaffaa;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+#contacts {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts p {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+    margin: 0;
+    font-size: 25px;
+    line-height: 1;
+}
+
+main {
+    flex: 1;
+}

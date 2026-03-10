@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'perpetua';
+    src: url('fonts/perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'minecraft';
+    src: url('fonts/minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-image: url('Grass_Block.jpg');
+    background-repeat: repeat;
+    background-size: 356px 256px;
+    background-color: #1a2c1a;
+    color: #ffffff;
+    min-height: 100vh;
+    font-size: 25px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 200px;
+}
+
+.up_name {
+    margin-bottom: 3px;
+}
+
+.up_name h1 {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 4px 4px 0 #2a4a2a, 6px 6px 0 #0a2a0a;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.buttons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 4%;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons li {
+    position: relative;
+    text-align: center;
+}
+
+.buttons li a {
+    text-decoration: none;
+    color: #aaffaa;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    border-radius: 0px;
+    min-width: 150px;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #3a3a3a;
+    border-color: #8b8b8b #2a2a2a #2a2a2a #8b8b8b;
+    box-shadow: 0 4px 0 #2a2a2a;
+}
+
+.buttons li a:hover {
+    color: #ffffff;
+    background-color: #5a5a5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #2a4a2a;
+    border-color: #aaaaaa #3a3a3a #3a3a3a #aaaaaa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+}
+
+p, li, td {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+}
+
+a {
+    color: #aaffaa;
+}
+
+.page-title-block {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.page-title-block h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.combos-block, .dishes-block, .drinks-block, .nav-block {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.combos-block h2, .dishes-block h2, .drinks-block h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.section {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.combos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.combo {
+    background-color: rgba(30, 30, 30, 0.5);
+    padding: 16px;
+    border: 2px solid #5a5a5a;
+    flex: 1 1 30%;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.combo h3 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+}
+
+.combo-items {
+    color: #cccccc;
+    margin: 0 0 8px;
+    font-size: 22px;
+    flex-grow: 1;
+}
+
+.combo-meta {
+    font-weight: 600;
+    color: #aaffaa;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.add-combo-btn {
+    padding: 12px;
+    border: 3px solid #8b8b8b;
+    background-color: #b91313;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 0 #5a2a2a;
+}
+
+.add-combo-btn:hover {
+    background-color: #2762c0;
+    box-shadow: 0 4px 0 #1a3a6a;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn, .drink-filter-btn {
+    padding: 12px 18px;
+    border: 3px solid #8b8b8b;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 20px;
+}
+
+.filter-btn.active, .drink-filter-btn.active {
+    border-color: #aaffaa;
+    background-color: #2a4a2a;
+}
+
+.items-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: rgba(30, 30, 30, 0.5);
+    border: 2px solid #5a5a5a;
+    padding: 15px;
+    width: calc(25% - 15px);
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border: 2px solid #5a5a5a;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.item-info h4 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.item-info .price {
+    font-weight: 700;
+    color: #aaffaa;
+    font-size: 22px;
+}
+
+.add-btn {
+    padding: 12px;
+    border: 3px solid #8b8b8b;
+    background-color: #b91313;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-shadow: 0 4px 0 #5a2a2a;
+}
+
+.add-btn:hover {
+    background-color: #2762c0;
+    box-shadow: 0 4px 0 #1a3a6a;
+}
+
+.primary-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #b91313;
+    color: #ffffff;
+    border: 3px solid #8b8b8b;
+    text-decoration: none;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 22px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 0 #5a2a2a;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #2762c0;
+    box-shadow: 0 4px 0 #1a3a6a;
+}
+
+#contacts {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts p {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+    margin: 0;
+    font-size: 25px;
+    line-height: 1;
+}
+
+main {
+    flex: 1;
+}
+
+* {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+    .item {
+        width: calc(33.33% - 14px);
+    }
+}
+
+@media (max-width: 900px) {
+    .item {
+        width: calc(50% - 10px);
+    }
+    .combos-container {
+        flex-direction: column;
+    }
+    .combo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        padding: 0 20px;
+    }
+    .item {
+        width: 100%;
+    }
+}

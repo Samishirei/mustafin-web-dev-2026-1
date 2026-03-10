@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubic World of Taste - Create lunch</title>
+  <link rel="icon" href="img/Apple.png" type="image/png">
+  <link rel="stylesheet" href="create_lunch.css">
+</head>
+<body>
+  <div class="up_name">
+    <h1>Cubic World of Taste</h1>
+  </div>
+
+  <header>
+    <nav>
+      <ul class="buttons">
+        <li><a href="about_us.html"><h3>About us</h3></a></li>
+        <li><a href="#contacts"><h3>Contact</h3></a></li>
+        <li><a href="create_lunch.html"><h3>Create lunch</h3></a></li>
+        <li><a href="place_an_order.html"><h3>Place an order</h3></a></li>
+        <li><a href="order.html"><h3>Orders</h3></a></li>
+        <li><a href="feedback_form.html"><h3>Feedback form</h3></a></li>
+        <li><a href="authentication.html"><h3>Authentication</h3></a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="page-title-block">
+    <h1>Create your Minecraft meal</h1>
+  </div>
+
+  <main>
+    <section id="combos" class="combos section">
+      <h2>Combo meals</h2>
+      <div class="combos-container">
+        <div class="combo" data-combo-id="1">
+          <h3>Combo 1: Adventurer's Breakfast</h3>
+          <p class="combo-items">Potion of Healing, Golden Apple</p>
+          <div class="combo-meta">Price: 44 Emeralds</div>
+          <button class="add-combo-btn">Add combo</button>
+        </div>
+
+        <div class="combo" data-combo-id="2">
+          <h3>Combo 2: Miner's Lunch</h3>
+          <p class="combo-items">Baked Potato, Cooked Porkchop, Honey Bottle</p>
+          <div class="combo-meta">Price: 18 Emeralds</div>
+          <button class="add-combo-btn">Add combo</button>
+        </div>
+
+        <div class="combo" data-combo-id="3">
+          <h3>Combo 3: Enchanter's Dinner</h3>
+          <p class="combo-items">Enchanted Golden Apple, Suspicious Stew</p>
+          <div class="combo-meta">Price: 76 Emeralds</div>
+          <button class="add-combo-btn">Add combo</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="dishes-block">
+      <h2>Dishes</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="meat">Meat</button>
+        <button class="filter-btn" data-filter="soup">Stew/Soup</button>
+        <button class="filter-btn" data-filter="Veggies">Veggies</button>
+      </div>
+      <div class="items-grid dishes-grid">
+        <div class="item" data-id="food1" data-name="Cooked Porkchop" data-price="8" data-type="meat" data-img="img/porkchop.jpg">
+          <img src="img/porkchop.jpg" alt="Cooked Porkchop">
+          <div class="item-info">
+            <h4>Cooked Porkchop</h4>
+            <div class="price">8 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="item" data-id="food2" data-name="Cooked Rabbit" data-price="8" data-type="meat" data-img="img/rabbit.jpg">
+          <img src="img/rabbit.jpg" alt="Cooked Rabbit">
+          <div class="item-info">
+            <h4>Cooked Rabbit</h4>
+            <div class="price">8 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="item" data-id="food3" data-name="Suspicious Stew" data-price="12" data-type="soup" data-img="img/stew.jpg">
+          <img src="img/stew.jpg" alt="Suspicious Stew">
+          <div class="item-info">
+            <h4>Suspicious Stew</h4>
+            <div class="price">12 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="item" data-id="food4" data-name="Mushroom Stew" data-price="10" data-type="soup" data-img="img/Mushroom_Stew.jpg">
+          <img src="img/Mushroom_Stew.jpg" alt="Mushroom Stew">
+          <div class="item-info">
+            <h4>Mushroom Stew</h4>
+            <div class="price">10 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="item" data-id="food5" data-name="Golden Carrot" data-price="10" data-type="Veggies" data-img="img/carrot.jpg">
+          <img src="img/carrot.jpg" alt="Golden Carrot">
+          <div class="item-info">
+            <h4>Golden Carrot</h4>
+            <div class="price">10 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="item" data-id="food6" data-name="Golden Apple" data-price="32" data-type="Veggies" data-img="img/Golden_Apple.jpg">
+          <img src="img/Golden_Apple.jpg" alt="Golden Apple">
+          <div class="item-info">
+            <h4>Golden Apple</h4>
+            <div class="price">32 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="item" data-id="food7" data-name="Enchanted Golden Apple" data-price="64" data-type="Veggies" data-img="img/Enchanted_Golden_Apple.jpg">
+          <img src="img/Enchanted_Golden_Apple.jpg" alt="Enchanted Golden Apple">
+          <div class="item-info">
+            <h4>Enchanted Golden Apple</h4>
+            <div class="price">64 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="item" data-id="food8" data-name="Baked Potato" data-price="5" data-type="Veggies" data-img="img/potato.jpg">
+          <img src="img/potato.jpg" alt="Baked Potato">
+          <div class="item-info">
+            <h4>Baked Potato</h4>
+            <div class="price">5 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="drinks-block">
+      <h2>Drinks</h2>
+      <div class="filters">
+        <button class="drink-filter-btn active" data-filter="all">All</button>
+        <button class="drink-filter-btn" data-filter="Potions">Potions</button>
+        <button class="drink-filter-btn" data-filter="Honey">Honey</button>
+      </div>
+      <div class="items-grid drinks-grid">
+        <div class="item" data-id="drink1" data-name="Honey Bottle" data-price="5" data-type="Honey" data-img="img/honey.jpg">
+          <img src="img/honey.jpg" alt="Honey Bottle">
+          <div class="item-info">
+            <h4>Honey Bottle</h4>
+            <div class="price">5 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="item" data-id="drink2" data-name="Potion of Healing" data-price="12" data-type="Potions" data-img="img/Potion_of_Healing.jpg">
+          <img src="img/Potion_of_Healing.jpg" alt="Potion">
+          <div class="item-info">
+            <h4>Potion of Healing</h4>
+            <div class="price">12 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>        
+        <div class="item" data-id="drink3" data-name="Potion of Weakness" data-price="15" data-type="Potions" data-img="img/Potion_of_Weakness.jpg">
+          <img src="img/Potion_of_Weakness.jpg" alt="Potion">
+          <div class="item-info">
+            <h4>Potion of Weakness</h4>
+            <div class="price">15 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="item" data-id="drink4" data-name="Potion of Invisibility" data-price="18" data-type="Potions" data-img="img/Potion_of_Invisibility.jpg">
+          <img src="img/Potion_of_Invisibility.jpg" alt="Potion">
+          <div class="item-info">
+            <h4>Potion of Invisibility</h4>
+            <div class="price">18 em.</div>
+          </div>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-block">
+      <a href="place_an_order.html" class="primary-btn">Go to order</a>
+    </div>
+  </main>
+
+  <footer id="contacts">
+    <p>&copy; 2026 Cubic World of Taste productions</p>
+  </footer>
+
+  <script>
+    const COMBOS = {
+      1: {
+        name: "Combo 1: Adventurer's Breakfast",
+        items: [
+          { id: "drink2", name: "Potion of Healing", price: 12, img: "img/Potion_of_Healing.jpg" },
+          { id: "food6", name: "Golden Apple", price: 32, img: "img/Golden_Apple.jpg" }
+        ],
+        total: 44
+      },
+      2: {
+        name: "Combo 2: Miner's Lunch",
+        items: [
+          { id: "food8", name: "Baked Potato", price: 5, img: "img/potato.jpg" },
+          { id: "food1", name: "Cooked Porkchop", price: 8, img: "img/porkchop.jpg" },
+          { id: "drink1", name: "Honey Bottle", price: 5, img: "img/honey.jpg" }
+        ],
+        total: 18
+      },
+      3: {
+        name: "Combo 3: Enchanter's Dinner",
+        items: [
+          { id: "food7", name: "Enchanted Golden Apple", price: 64, img: "img/Enchanted_Golden_Apple.jpg" },
+          { id: "food2", name: "Suspicious Stew", price: 12, img: "img/stew.jpg" }
+        ],
+        total: 76
+      }
+    };
+
+    function addToCart(item) {
+      let cart = JSON.parse(localStorage.getItem('cartItems')) || [];
+      
+      const cartItem = {
+        id: item.id + '_' + Date.now(),
+        name: item.name,
+        price: item.price,
+        img: item.img
+      };
+      
+      cart.push(cartItem);
+      localStorage.setItem('cartItems', JSON.stringify(cart));
+      alert(`${item.name} added to cart!`);
+    }
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const dishesGrid = document.querySelector('.dishes-grid');
+    
+    if (filterBtns.length && dishesGrid) {
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          const filter = btn.dataset.filter;
+          const items = dishesGrid.querySelectorAll('.item');
+          
+          items.forEach(item => {
+            if (filter === 'all' || item.dataset.type === filter) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    }
+
+    const drinkFilterBtns = document.querySelectorAll('.drink-filter-btn');
+    const drinksGrid = document.querySelector('.drinks-grid');
+    
+    if (drinkFilterBtns.length && drinksGrid) {
+      drinkFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          drinkFilterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          const filter = btn.dataset.filter;
+          const items = drinksGrid.querySelectorAll('.item');
+          
+          items.forEach(item => {
+            if (filter === 'all' || item.dataset.type === filter) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    }
+
+    document.querySelectorAll('.add-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const item = e.target.closest('.item');
+        if (!item) return;
+        
+        const id = item.dataset.id;
+        const name = item.dataset.name;
+        const price = parseInt(item.dataset.price);
+        const img = item.dataset.img;
+        
+        if (id && name && price) {
+          addToCart({ id, name, price, img });
+        }
+      });
+    });
+
+    document.querySelectorAll('.add-combo-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const combo = e.target.closest('.combo');
+        if (!combo) return;
+        
+        const comboId = combo.dataset.comboId;
+        const comboData = COMBOS[comboId];
+        
+        if (comboData) {
+          comboData.items.forEach(item => {
+            addToCart(item);
+          });
+          alert(`${comboData.name} added to cart!`);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

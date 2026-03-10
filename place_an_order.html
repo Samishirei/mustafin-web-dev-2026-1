@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubic World of Taste - Place an order</title>
+  <link rel="icon" href="img/Apple.png" type="image/png">
+  <link rel="stylesheet" href="place_an_order.css">
+</head>
+<body>
+
+<div class="up_name">
+  <h1>Cubic World of Taste</h1>
+</div>
+
+<header>
+  <nav>
+    <ul class="buttons">
+      <li><a href="about_us.html"><h3>About us</h3></a></li>
+      <li><a href="#contacts"><h3>Contact</h3></a></li>
+      <li><a href="create_lunch.html"><h3>Create lunch</h3></a></li>
+      <li><a href="place_an_order.html"><h3>Place an order</h3></a></li>
+      <li><a href="order.html"><h3>Orders</h3></a></li>
+      <li><a href="feedback_form.html"><h3>Feedback form</h3></a></li>
+      <li><a href="authentication.html"><h3>Authentication</h3></a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-title-block">
+  <h1>Your order</h1>
+</div>
+
+<main>
+  <div class="order-block">
+    <div class="checkout-container">
+      <div class="checkout-cart">
+        <h2>Order items</h2>
+        <div id="order-flexbox" class="order-flexbox"></div>
+        <ul id="checkout-list" class="checkout-list"></ul>
+        <p>Total: <span id="total-price">0</span> Emeralds</p>
+      </div>
+
+      <div class="checkout-form">
+        <h2>Customer details</h2>
+        
+        <div class="form-group">
+          <label for="fio">Full name:</label>
+          <input type="text" id="fio" placeholder="Full name">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Email">
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" placeholder="Phone">
+        </div>
+        
+        <div class="form-group">
+          <label for="address">Delivery address:</label>
+          <input type="text" id="address" placeholder="Delivery address">
+        </div>
+        
+        <div class="form-group">
+          <label for="order-comments">Order comment:</label>
+          <textarea id="order-comments" placeholder="Order comment" rows="3"></textarea>
+        </div>
+        
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="subscribe"> 
+            <h3>Subscribe to news</h3>
+          </label>
+        </div>
+
+        <h3>Delivery time</h3>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="delivery_time" value="asap" checked> 
+            <h3>As soon as possible</h3>
+          </label>
+          <label>
+            <input type="radio" name="delivery_time" value="specified"> 
+            <h3>Specify time</h3>
+          </label>
+        </div>
+        
+        <div id="time-selection" class="time-selection hidden">
+          <label for="delivery-time">Choose time:</label>
+          <input type="time" id="delivery-time">
+        </div>
+
+        <div class="form-actions">
+          <button id="reset-btn" class="secondary-btn">Reset</button>
+          <button id="submit-btn" class="primary-btn">Place order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="success-popup" class="popup hidden">
+  <div class="popup-content">
+    <h3>Order placed successfully!</h3>
+    <p>Thank you for your order. We will contact you shortly.</p>
+    <button id="ok-btn" class="primary-btn">OK</button>
+  </div>
+</div>
+
+<footer id="contacts">
+  <p>&copy; 2026 Cubic World of Taste productions</p>
+</footer>
+
+<script src="place_an_order.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'perpetua';
+    src: url('fonts/perpetua.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'minecraft';
+    src: url('fonts/minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-image: url('Grass_Block.jpg');
+    background-repeat: repeat;
+    background-size: 356px 256px;
+    background-color: #1a2c1a;
+    color: #ffffff;
+    min-height: 100vh;
+    font-size: 25px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 200px;
+}
+
+.up_name {
+    margin-bottom: 3px;
+}
+
+.up_name h1 {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 4px 4px 0 #2a4a2a, 6px 6px 0 #0a2a0a;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.buttons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 4%;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons li {
+    position: relative;
+    text-align: center;
+}
+
+.buttons li a {
+    text-decoration: none;
+    color: #aaffaa;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    border-radius: 0px;
+    min-width: 150px;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #3a3a3a;
+    border-color: #8b8b8b #2a2a2a #2a2a2a #8b8b8b;
+    box-shadow: 0 4px 0 #2a2a2a;
+}
+
+.buttons li a:hover {
+    color: #ffffff;
+    background-color: #5a5a5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #2a4a2a;
+    border-color: #aaaaaa #3a3a3a #3a3a3a #aaaaaa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+}
+
+p, label {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+}
+
+a {
+    color: #aaffaa;
+}
+
+.auth-block {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.auth-block h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.auth-block form input[type="text"],
+.auth-block form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 3px solid #8b8b8b;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+}
+
+.checkbox-group {
+    margin: 20px 0;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-label h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+button {
+    padding: 15px 25px;
+    border: 3px solid #8b8b8b;
+    background-color: #b91313;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 22px;
+    box-shadow: 0 4px 0 #5a2a2a;
+    min-width: 120px;
+    transition: all 0.3s ease;
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2762c0;
+    box-shadow: 0 4px 0 #1a3a6a;
+}
+
+#contacts {
+    background-color: rgba(20, 20, 20, 0.7);
+    border: 4px solid #8b8b8b;
+    box-shadow: 0 0 0 2px #2a2a2a;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts p {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    color: #ffffff;
+    margin: 0;
+    font-size: 25px;
+    line-height: 1;
+}
+
+main {
+    flex: 1;
+}
+
+* {
+    font-family: 'minecraft', 'Courier New', monospace !important;
+    box-sizing: border-box;
+}
